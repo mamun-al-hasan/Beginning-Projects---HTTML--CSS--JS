@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d6e3f7;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #555555;
+}
+
+.form-group input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.forgot-password-link {
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.social-login .btn {
+  background-color: #4267b2; /* Facebook Blue */
+}
+
+.social-login .btn.google {
+  background-color: #db4437; /* Google Red */
+}
+
+.social-login .btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 600px) {
+  .login-container {
+    max-width: 600px;
+  }
+}
