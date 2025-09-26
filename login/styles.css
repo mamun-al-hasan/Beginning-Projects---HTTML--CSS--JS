@@ -121,6 +121,13 @@ body {
   opacity: 0.9;
 }
 
+.social-login-title {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333333;
+  font-weight: 600;
+}
+
 /* Responsive Design */
 @media screen and (min-width: 600px) {
   .login-container {
